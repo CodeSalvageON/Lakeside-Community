@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+h5 {
+  font-size: 16px;
+  background-color: powderblue;
+}
+
+actionlink {
+  color: blue;
+  text-decoration: underline;
+}
+
+actionlink:hover {
+  cursor: pointer;
+}
+
+#client {
+  width: 500px;
+  margin: auto;
+  height: 100vh;
+  text-align: center;
+  background-color: gainsboro;
+}
+
+#stickers {
+  bottom: 0px;
+  position: relative;
+}
