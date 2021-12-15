@@ -10,8 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "atob": "^2.1.2",
     "body-parser": "^1.19.1",
     "express": "^4.17.1",
+    "sanitize": "^2.1.0",
+    "sanitizer": "^0.1.3",
+    "simple-encryptor": "^4.0.0",
     "socket.io": "^4.4.0"
   }
 }

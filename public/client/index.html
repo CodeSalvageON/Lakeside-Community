@@ -20,28 +20,43 @@
           <br/>
           <i>ScreenName</i> 
           <br/>
-          <input type="text" id="screen-name-signup" />
+          <input type="text" id="screen-name-signup" required maxlength="100"/>
           <br/>
           <p>Custom Encryption Key</p>
-          <input type="password" id="password-signup" />
+          <input type="password" id="password-signup" required/>
           <br/>
           <button>Sign Up!</button>
         </form>
         <form id="login-form" align="left" autocomplete="off">
-          <h5>Log On and explore BHSIM!</h5>
+          <h5 id="login-msg">Log On and explore BHSIM!</h5>
           <actionlink id="alt-sign-up"><i>Sign Up instead?</i></actionlink>
           <br/>
           <br/>
           <i>ScreenName</i> 
           <br/>
-          <input type="text" id="screen-name-login" />
+          <input type="text" id="screen-name-login" required/>
           <br/>
           <p>Custom Encryption Key</p>
-          <input type="password" id="password-login" />
+          <input type="password" id="password-login" required/>
           <br/>
           <button>Log On!</button>
         </form>
       </fieldset>
+      <fieldset id="chat">
+        <legend>BurlingtonFOSS/Burlington 1998 is not responsible for any misuse of this application.</legend>
+        <section class="add-scroll" id="chatbox">
+        </section>
+        <fieldset id="message">
+          <legend>Write your message below!</legend>
+          <form id="msg-write">
+            <textarea cols="50" rows="5" id="msg-text"></textarea>
+            <br/>
+            <button>Send Message!</button>
+          </form>
+        </fieldset>
+      </fieldset>
+      <a href="https://codesalvageon.github.io/MYRDERSHAX/" target="_blank">Want to encrypt messages anywhere?</a>
+      <br/>
       <section id="stickers"> 
         <img src="/client/imgs/netnow3.gif"><img src="/client/imgs/msiebutton.gif"><img src="/client/imgs/linkexchange.gif"><img src="/client/imgs/members-choice.gif">
       </section>
@@ -49,6 +64,7 @@
 
     <script src="/client/jquery.js"></script>
     <script src="/client/presets.js"></script>
+    <script src="/client/cipher.js"></script>
     <script src="/client/action.js"></script>
   </body>
 </html>

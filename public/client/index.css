@@ -17,6 +17,10 @@ actionlink:hover {
   cursor: pointer;
 }
 
+textarea {
+  resize: none;
+}
+
 #client {
   width: 500px;
   margin: auto;
@@ -28,4 +32,18 @@ actionlink:hover {
 #stickers {
   bottom: 0px;
   position: relative;
+}
+
+#chatbox {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+
+.add-scroll {
+  overflow-y: auto;
+}
+
+.blue {
+  color: blue;
 }
