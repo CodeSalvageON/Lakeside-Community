@@ -27,6 +27,8 @@ const loginMSG = document.getElementById("login-msg");
 const msgWriteValue = document.getElementById("msg-text");
 const chatbox = document.getElementById("chatbox");
 
+let temp_username = "";
+
 let oldChat = "";
 
 $("#alt-log-on").click(function () {
@@ -55,6 +57,7 @@ $("#signup-form").submit(function () {
 
 $("#login-form").submit(function () {
   event.preventDefault();
+  username = loginUsername.value;
   
   if (loginPassword.value === localEncryptionKey) {
     $("#startup").hide();
@@ -76,7 +79,7 @@ $("#msg-write").submit(function () {
       'Content-Type' : 'application/json'
     },
     body : JSON.stringify({
-      username : btoa(localUsername),
+      username : btoa(username),
       msg : btoa(msgWriteValue.value)
     })
   })
